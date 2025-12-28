@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Titel på sidan som visas i fliken i webbläsaren-->
+    <title>Labb2-Grupp73</title>
+
+    <!-- Länk till CSS-styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+     <!--Huvudrubrik på sidan -->
+    <h1>Labb 2 - Grupp 73</h1>
+
+    <!--Container med alla formulär element som styling med CSS Grid -->
+    <div class="main-box">
+
+         <!--Label + inputfält för färg -->
+        <label for="color">Färg</label>
+        <input type="text" id="color" name="color" class="textfield">
+
+         <!--Label + inputfält för textinnehåll -->
+        <label for="content">Innehåll</label>
+        <input type="text" id="content" name="content" class="textfield">
+
+        <!--Label + checkbox för att aktivera styling på boxen -->
+        <label for="divStyle">Stil på box</label>
+        <input type="checkbox" id="divStyle" name="divStyle" class="checkbox">
+
+        <!--Knapp som tar bort div elementet via JavaScript -->
+        <button id="removeBtn">Radera</button>
+
+         <!--Div element som JavaScript kommer att fylla med text och färg -->
+        <div id="output">Din som egentligen ska vara tom</div>
+    </div>
+
+    <!--Länk till JavaScript fil som hanterar funktionalitet -->
+    <script src="script.js"></script>
+</body>
+</html>

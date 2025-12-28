@@ -1,0 +1,78 @@
+/*Bakgrund font och layout för hela sidan */
+body {
+    background: linear-gradient(#081a2d, #213b54);
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+}
+
+/*Sidans huvudrubrik */
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*Formulär rutan använder CSS Grid för rad/kolumnlayout */
+.main-box {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    row-gap: 15px;
+    column-gap: 20px;
+    width: 60%;
+    background-color: #e5e7eb;
+    margin: 40px auto;
+    padding: 30px;
+    border-radius: 10px;
+    color: black;
+}
+
+/*Text inputs: fyller upp sin grid kolumn */
+.textfield {
+    width: 100%;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #c3c3c3;
+}
+
+/*Checkbox justeras så att den hamnar vid samma vänstra startpunkt som textfält */
+.checkbox {
+    grid-column: 2;
+    justify-self: start;
+    align-self: center;
+    margin-left: 0; /* säkerställer att den inte är centrerad */
+}
+
+/*Knappen placeras på en egen rad som täcker båda kolumner */
+button {
+    grid-column: 1 / span 2;
+    width: 120px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    border: 1px solid gray;
+    cursor: pointer;
+    background-color: #d7e1ec;
+}
+
+/*Enkel hover effekt*/
+button:hover {
+    background-color: #c1cfdd;
+}
+
+/*Output diven täcker två kolumner och används för visning av text & färg */
+#output {
+    grid-column: 1 / span 2;
+    width: 100%;
+    min-height: 35px;
+    border: 1px solid #888;
+    padding: 8px;
+}
+
+#output {
+    min-height: 60px;
+    border: 1px solid #999;
+    padding: 10px;
+    margin-top: 10px;
+}
+
